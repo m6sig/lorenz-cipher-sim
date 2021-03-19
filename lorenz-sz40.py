@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Lorenz SZ40 Cipher Machine simulator
+# Lorenz Sz40 Cipher Machine simulator
 #
 
 import sys
@@ -247,9 +247,6 @@ class MotorWheelBank(WheelBank):
 
     def is_active(self):
         return self.wheels[1].get_val()
-        # Following is what the course video says, but that is not
-        # supported by any other documentation, and I think it's wrong.
-        #return self.wheels[0].get_val() ^ self.wheels[1].get_val()
 
 
 class LorenzCipher:
