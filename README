@@ -5,6 +5,8 @@ Reduced numbers of LTRS/FIGS symbol to rise the bar for chosen plaintext attack 
 Improve wheel generation speed.
 Randomise wheel indicator numbers.
 
+According to publication BREAKING TELEPRINTER CIPHERS AT BLETCHLEY PARK: An edition of I. J. Good, D. Michie and G. Timms' GENERAL REPORT ON TUNNY WITH EMPHASIS ON STATISTICAL METHODS (1945) Edited and with introductions and notes by James A. Reeds, Whitfield Diffie and J. V. Field. The lorenz-sz40.py is the Lorenz Schlüsselzusatz 40, aka Lorenz Sz40.
+
 Usage:
 $ python3 lorenz-sz40.py [-h] [--keygen <key file>]
                          [--encrypt <input file> <key file> <output file>]
