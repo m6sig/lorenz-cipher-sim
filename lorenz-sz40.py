@@ -215,7 +215,7 @@ class WheelBank:
 
     def get_val(self):
         result = []
-        for i in list(range(5)):
+        for i in range(5):
             result.append(self.wheels[i].get_val())
         # Wheel numbered 1 is low bit, so we need to flip the bit order.
         # NOTE: I'm not 100% sure which wheel has the MSB and which the
@@ -380,7 +380,7 @@ if __name__ == '__main__':
         K_sizes = [23, 26, 29, 31, 41]
         S_sizes = [59, 53, 51, 47, 43]
         M_sizes = [61, 37]
-        keygen_randombuf = '{:0501b}'.format(randgen.getrandbits(573))
+        keygen_randombuf = '{:0573b}'.format(randgen.getrandbits(573))
         K_wheels = [[], [], [], [], []]
         S_wheels = [[], [], [], [], []]
         M_wheels = [[], []]
