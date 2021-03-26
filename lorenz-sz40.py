@@ -103,7 +103,7 @@ tty_figs2asc = [
 #           30   31
 #            '=', '']
 
-tty2blyprintout = [
+tty2bpname = [
     '/', 'T', '3', 'O', '9', 'H', 'N', 'M',
     '4', 'L', 'R', 'G', 'I', 'P', 'C', 'V',
     'E', 'Z', 'D', 'B', 'S', 'Y', 'F', 'X',
@@ -114,7 +114,7 @@ def tty2blyprintout(s):
     result = []
     for char in s:
         char = ord(char) & MSK5
-        char = tty2blyprintout[char]
+        char = tty2bpname[char]
         result.append(char)
 
     return ''.join(result)
